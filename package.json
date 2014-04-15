@@ -1,0 +1,24 @@
+{
+  "name": "gulp-css-validator",
+  "version": "0.0.0",
+  "description": "Gulp port of the node css-validator plugin",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgmeyers/gulp-css-validator.git"
+  },
+  "author": {
+    "name": "Matthew Meyers",
+    "email": "hello@matthewmeye.rs",
+    "url": "https://github.com/mgmeyers"
+  },
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/mgmeyers/gulp-css-validator/issues"
+  },
+  "homepage": "https://github.com/mgmeyers/gulp-css-validator",
+  "devDependencies": {
+    "css-validator": "^0.5.1",
+    "event-stream": "^3.1.1"
+  }
+}
