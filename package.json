@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-validator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Gulp port of the node css-validator plugin",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,7 @@
     "url": "https://github.com/mgmeyers/gulp-css-validator/issues"
   },
   "homepage": "https://github.com/mgmeyers/gulp-css-validator",
-  "devDependencies": {
+  "dependencies": {
     "css-validator": "^0.5.1",
     "event-stream": "^3.1.1"
   }
