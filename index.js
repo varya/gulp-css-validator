@@ -54,7 +54,11 @@ module.exports = function (options) {
 
         data.errors.forEach(function (v) {
           var location = 'Line ' + v.line + ':';
-          gutil.log(errorText, file.relative, location, v.message.replace(/\n|\s+/g, ' ').trim());
+          var errorMsgParts = [errorText, file.relative, location, v.message.replace(/\n|\s+/g, ' ').trim()];
+          if (v.skippedstring) {
+            errorMsgParts.push(v.skippedstring.replace(/\n|\s+/g, ' ').trim());
+          }
+          gutil.log.apply(null, errorMsgParts);
         });
 
         return callback(verr);
